@@ -1,0 +1,17 @@
+{
+  "name": "lcssistemas/module-product-sorting",
+  "description": "Module to sort products by creation date in categories",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "LCSSistemas\\ProductSorting\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
