@@ -12,4 +12,7 @@
     <type name="Magento\Catalog\Model\Layer">
         <plugin name="lcssistemas_productsorting_layer_sorting" type="LCSSistemas\ProductSorting\Plugin\Catalog\Model\Layer"/>
     </type>
+    <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
+        <plugin name="lcssistemas_productsorting_toolbar_position" type="LCSSistemas\ProductSorting\Plugin\Catalog\Block\Product\ProductList\Toolbar"/>
+    </type>
 </config>

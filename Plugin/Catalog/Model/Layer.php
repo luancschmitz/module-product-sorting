@@ -28,11 +28,11 @@ class Layer
      */
     public function beforePrepareProductCollection(LayerCore $subject, ProductCollection $collection): array
     {
+        $sortBy = $this->toolbar->getRequest()->getParam('product_list_dir') ?? 'desc';
         $currentOrder = $this->toolbar->getCurrentOrder();
-        $currentDirection = $this->toolbar->getCurrentDirection();
         switch ($currentOrder) {
             case 'orderby_creationdate':
-                $collection->setOrder('created_at', $currentDirection);
+                $collection->setOrder('created_at', $sortBy);
                 break;
         }
 
